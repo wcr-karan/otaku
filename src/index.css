@@ -1,13 +1,71 @@
-body {
+/* index.css */
+html, body, #root {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #1f1f2e; /* optional but nice bg */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #1f1f2e;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
+
+.chat-box {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.msg {
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  max-width: 70%;
+}
+
+.msg.user {
+  background-color: #4b8cff;
+  align-self: flex-end;
+}
+
+.msg.ai {
+  background-color: #2a2a3a;
+  align-self: flex-start;
+}
+
+.input-bar {
+  display: flex;
+  padding: 1rem;
+  background: #14141f;
+  border-top: 1px solid #333;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: #2e2e3e;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.input-bar button {
+  padding: 0.7rem 1.2rem;
+  background: #4b8cff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
