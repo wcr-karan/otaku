@@ -1,0 +1,2 @@
+# otaku
+Just Do it.
